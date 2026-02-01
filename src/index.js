@@ -15,8 +15,8 @@ job.start();
 app.use(express.json());
 app.use(cors());
 
-app.use("auth", authRoutes);
-app.use("books", bookRoutes);
+app.use("/auth", authRoutes);
+app.use("/books", bookRoutes);
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
