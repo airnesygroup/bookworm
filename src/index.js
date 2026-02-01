@@ -19,6 +19,6 @@ app.use("/auth", authRoutes);
 app.use("/books", bookRoutes);
 
 app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+  console.log(`Server runing on port ${PORT}`);
   connectDB();
 });
